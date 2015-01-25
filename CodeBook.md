@@ -81,7 +81,9 @@ The tidy dataset is contained in the file "mean_activity_subject.txt". It was  o
 #The tidy dataset
 ## The tidy dataset has 68 columns and 180 rows. Each row is an observation (the mean of each measurement by subject and activity) and each column is an variable.
 This is the set of variables.
+
 Subject: 30 subjects, labelled 1 to 30
+
 Activity: 6 activities (WALKING, WALKING_UPSTAIRS, WALKING_DOWNSTAIRS, SITTING, STANDING, LAYING)
 and the next 66 variables are grouped means of the same variables in the raw dataset.
 timeBodyAccelerometerXaxisMean
