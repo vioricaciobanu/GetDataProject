@@ -1,6 +1,7 @@
 # STUDY DESIGN
 ## These are excerpts from the READ.ME file and "features_info" that describe the raw dataset.
-###Features are normalized and bounded within [-1,1]
+
+The units of the variables in the raw dataset are normalized and bounded within [-1,1]
 "
 The experiments have been carried out with a group of 30 volunteers within an age bracket of 19-48 years. Each person performed six activities (WALKING, WALKING_UPSTAIRS, WALKING_DOWNSTAIRS, SITTING, STANDING, LAYING) wearing a smartphone (Samsung Galaxy S II) on the waist. Using its embedded accelerometer and gyroscope, we captured 3-axial linear acceleration and 3-axial angular velocity at a constant rate of 50Hz. The experiments have been video-recorded to label the data manually. The obtained dataset has been randomly partitioned into two sets, where 70% of the volunteers was selected for generating the training data and 30% the test data. 
 
@@ -79,142 +80,77 @@ The tidy dataset is contained in the file "mean_activity_subject.txt". It was  o
 7. Last step was to calculate the average of each measurement for each activity and each subject.
 
 #The tidy dataset
-## The tidy dataset has 68 columns and 180 rows. Each row is an observation (the mean of each measurement by subject and activity) and each column is an variable.
+## The tidy dataset has 68 columns and 180 rows. Each row is an observation and each column is an variable. The units are the grouped means by subject and activity of the variables containing the mean and standard deviation in the raw dataset. 
 This is the set of variables.
 
 Subject: 30 subjects, labelled 1 to 30
 
 Activity: 6 activities (WALKING, WALKING_UPSTAIRS, WALKING_DOWNSTAIRS, SITTING, STANDING, LAYING)
-and the next 66 variables are grouped means of the same variables in the raw dataset.
+and the next 66 variables are averages of the means and standard deviations from the raw dataset.
 
 timeBodyAccelerometerXaxisMean
-
 timeBodyAccelerometerYaxisMean
-
 timeBodyAccelerometerZaxisMean
-
 timeGravityAccelerometerXaxisMean
-
 timeGravityAccelerometerYaxisMean
-
 timeGravityAccelerometerZaxisMean
-
 timeBodyAccelerometerJerkXaxisMean
-
 timeBodyAccelerometerJerkYaxisMean
-
 timeBodyAccelerometerJerkZaxisMean
-
 timeBodyGyroscopeXaxisMean
-
 timeBodyGyroscopeYaxisMean
-
 timeBodyGyroscopeZaxisMean
-
 timeBodyGyroscopeJerkXaxisMean
-
 timeBodyGyroscopeJerkYaxisMean
-
 timeBodyGyroscopeJerkZaxisMean
-
 timeBodyAccelerometerMagnitudeMean
-
 timeGravityAccelerometerMagnitudeMean
-
 timeBodyAccelerometerJerkMagnitudeMean
-
 timeBodyGyroscopeMagnitudeMean
-
 timeBodyGyroscopeJerkMagnitudeMean
-
 frequencyBodyAccelerometerXaxisMean
-
 frequencyBodyAccelerometerYaxisMean
-
 frequencyBodyAccelerometerZaxisMean
-
 frequencyBodyAccelerometerJerkXaxisMean
-
 frequencyBodyAccelerometerJerkYaxisMean
-
 frequencyBodyAccelerometerJerkZaxisMean
-
 frequencyBodyGyroscopeXaxisMean
-
 frequencyBodyGyroscopeYaxisMean
-
 frequencyBodyGyroscopeZaxisMean
-
 frequencyBodyAccelerometerMagnitudeMean
-
 frequencyBodyBodyAccelerometerJerkMagnitudeMean
-
 frequencyBodyBodyGyroscopeMagnitudeMean
-
 frequencyBodyBodyGyroscopeJerkMagnitudeMean
-
 timeBodyAccelerometerXaxisStd
-
 timeBodyAccelerometerYaxisStd
-
 timeBodyAccelerometerZaxisStd
-
 timeGravityAccelerometerXaxisStd
-
 timeGravityAccelerometerYaxisStd
-
 timeGravityAccelerometerZaxisStd
-
 timeBodyAccelerometerJerkXaxisStd
-
 timeBodyAccelerometerJerkYaxisStd
-
 timeBodyAccelerometerJerkZaxisStd
-
 timeBodyGyroscopeXaxisStd
-
 timeBodyGyroscopeYaxisStd
-
 timeBodyGyroscopeZaxisStd
-
 timeBodyGyroscopeJerkXaxisStd
-
 timeBodyGyroscopeJerkYaxisStd
-
 timeBodyGyroscopeJerkZaxisStd
-
 timeBodyAccelerometerMagnitudeStd
-
 timeGravityAccelerometerMagnitudeStd
-
 timeBodyAccelerometerJerkMagnitudeStd
-
 timeBodyGyroscopeMagnitudeStd
-
 timeBodyGyroscopeJerkMagnitudeStd
-
 frequencyBodyAccelerometerXaxisStd
-
 frequencyBodyAccelerometerYaxisStd
-
 frequencyBodyAccelerometerZaxisStd
-
 frequencyBodyAccelerometerJerkXaxisStd
-
 frequencyBodyAccelerometerJerkYaxisStd
-
 frequencyBodyAccelerometerJerkZaxisStd
-
 frequencyBodyGyroscopeXaxisStd
-
 frequencyBodyGyroscopeYaxisStd
-
 frequencyBodyGyroscopeZaxisStd
-
 frequencyBodyAccelerometerMagnitudeStd
-
 frequencyBodyBodyAccelerometerJerkMagnitudeStd
-
 frequencyBodyBodyGyroscopeMagnitudeStd
-
 frequencyBodyBodyGyroscopeJerkMagnitudeStd
